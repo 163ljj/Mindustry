@@ -18,7 +18,7 @@ jobs:
         java-version: 17
 
 
-    - name: Build with Gradle
+    - name: Create artifacts
       run: ./gradlew pack
         ./gradlew android:assembleDebug
 
