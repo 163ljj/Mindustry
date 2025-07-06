@@ -26,4 +26,4 @@ jobs:
     - name: Upload Android artifacts
       uses: svenstaro/upload-release-action@v2
       with:
-        file: android/build/outputs/apk/debug/*.apk
+        file: Mindustry/android/build/outputs/apk/debug/*.apk
