@@ -19,7 +19,8 @@ jobs:
 
 
     - name: Create artifacts
-      run: ./gradlew pack
+      run: |
+        ./gradlew pack
         ./gradlew android:assembleDebug
 
     - name: Upload Android artifacts
