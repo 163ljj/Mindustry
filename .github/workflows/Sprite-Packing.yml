@@ -24,6 +24,9 @@ jobs:
     - name: Upload Sprite Pack
       uses: svenstaro/upload-release-action@v2
       with:
-        file: |
-          core/assets/sprites/sprites.aatls
-          core/assets/sprites/fallback/sprites.aatls
+        file_glob: true  
+        file: |  
+          core/assets/sprites/*.png  
+          core/assets/sprites/*.aatls  
+          core/assets/sprites/fallback/*.png  
+          core/assets/sprites/fallback/*.aatls
