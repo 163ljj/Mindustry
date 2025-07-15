@@ -20,9 +20,13 @@ jobs:
     - name: Create Sprite Packing
       run: |
         ./gradlew tools:pack
+    
+    - name: Compress Sprite Folder
+      run: |
+        zip -r sprites-assets.zip core/assets/sprites
 
     - name: Upload Sprite Pack
       uses: svenstaro/upload-release-action@v2
       with:
-        file_glob: true  
-        file: "core/assets/sprites/**/*"
+        file: sprites-assets.zip
+        repo_token: ${{ secrets.GITHUB_TOKEN }}
