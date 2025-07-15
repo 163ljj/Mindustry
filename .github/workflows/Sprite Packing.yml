@@ -1,4 +1,4 @@
-name: Build Artifacts
+name: Sprite Packing
 
 on:
   push:
