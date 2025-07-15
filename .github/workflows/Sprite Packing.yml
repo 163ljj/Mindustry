@@ -19,10 +19,11 @@ jobs:
 
     - name: Create Sprite Packing
       run: |
-        ./gradlew pack
         ./gradlew tools:pack
 
-    - name: Upload Sprite Packing
+    - name: Upload Sprite Pack
       uses: svenstaro/upload-release-action@v2
       with:
-        file: 
+        file: |
+        core/assets/sprites/sprites.aatls
+        core/assets/sprites/fallback/sprites.aatls
