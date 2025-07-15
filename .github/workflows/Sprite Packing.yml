@@ -25,5 +25,5 @@ jobs:
       uses: svenstaro/upload-release-action@v2
       with:
         file: |
-        core/assets/sprites/sprites.aatls
-        core/assets/sprites/fallback/sprites.aatls
+          core/assets/sprites/sprites.aatls
+          core/assets/sprites/fallback/sprites.aatls
